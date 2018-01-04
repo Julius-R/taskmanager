@@ -1,0 +1,212 @@
+@import "https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css";
+#home {
+  background: url("../imgs/hero.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; }
+  #home .welcome-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 15px;
+    text-align: center; }
+    #home .welcome-box h1 {
+      font-size: 28px;
+      font-weight: 100;
+      text-transform: uppercase; }
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 15px 0; }
+  .btn.lightBlue {
+    font-size: 25px;
+    background: #25b3ec;
+    color: #ffffff; }
+
+#all-tasks {
+  height: 100%;
+  overflow: auto; }
+  #all-tasks .header {
+    background: url("../imgs/hero.jpg") center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #ffffff; }
+    #all-tasks .header .top {
+      background: rgba(58, 71, 147, 0.7);
+      padding: 50px 15px;
+      text-align: right;
+      position: relative; }
+      #all-tasks .header .top .logo {
+        float: left;
+        font-family: 'Megrim', cursive;
+        font-size: 36px; }
+      #all-tasks .header .top .tasks-total {
+        position: relative;
+        top: -20px; }
+        #all-tasks .header .top .tasks-total .task {
+          display: inline-block; }
+          #all-tasks .header .top .tasks-total .task .number {
+            color: #9787ee;
+            font-weight: 100;
+            font-size: 60px;
+            margin: 0 10px 0 0;
+            position: relative;
+            top: 15px; }
+  #all-tasks .content-area {
+    width: 100%;
+    overflow: auto; }
+    #all-tasks .content-area .tasks-container {
+      margin: 40px 0; }
+      #all-tasks .content-area .tasks-container .task-box {
+        background: #ffffff;
+        padding: 20px;
+        border-bottom: 2px solid #d1d1d1;
+        margin: 0 0 20px 0;
+        position: relative; }
+        #all-tasks .content-area .tasks-container .task-box .title {
+          color: black;
+          font-size: 24px;
+          margin: 0 0 15px 0; }
+        #all-tasks .content-area .tasks-container .task-box .date {
+          color: #ABABAB;
+          font-size: 14px; }
+        #all-tasks .content-area .tasks-container .task-box .check-box {
+          padding: 2px;
+          border-radius: 10px;
+          border: 3px solid #ABABAB;
+          display: inline-block;
+          position: absolute;
+          top: 25px;
+          right: 25px;
+          font-size: 32px;
+          color: #3a4793; }
+  #all-tasks .task-form {
+    background: #3a4793;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    padding: 50px 0;
+    transform: translate(0, 100%);
+    transition: all .6s ease-in-out; }
+    #all-tasks .task-form.active {
+      transform: translate(0, 0); }
+    #all-tasks .task-form .close-btn {
+      padding: 15px;
+      cursor: pointer;
+      position: absolute;
+      top: 35px;
+      right: 35px; }
+      #all-tasks .task-form .close-btn .fa {
+        font-size: 36px; }
+    #all-tasks .task-form form {
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 15px; }
+    #all-tasks .task-form h3 {
+      margin: 50px 0;
+      font-size: 36px;
+      text-align: center; }
+    #all-tasks .task-form .form-group {
+      margin-bottom: 20px; }
+    #all-tasks .task-form label {
+      display: block;
+      text-transform: capitalize;
+      font-family: 'Roboto', cursive;
+      font-weight: 300;
+      font-size: 24px;
+      margin: 0 0 15px 0; }
+    #all-tasks .task-form input[type="text"], #all-tasks .task-form textarea {
+      width: 100%;
+      outline: none;
+      font-family: 'Roboto', cursive;
+      font-weight: 300;
+      font-size: 36px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      color: #ffffff; }
+    #all-tasks .task-form textarea {
+      height: 250px; }
+    #all-tasks .task-form button {
+      background: #25b3ec;
+      padding: 15px 20px;
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #ffffff; }
+
+.add-circle {
+  background: black;
+  border-radius: 50%;
+  padding: 10px 14px;
+  position: absolute;
+  right: 25px;
+  top: 135px;
+  z-index: 19; }
+  .add-circle .fa {
+    color: #25b3ec;
+    font-size: 50px; }
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+@media screen and (max-width: 767px) {
+  #all-tasks .header .add-circle {
+    top: 112px;
+    right: 25px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    position: absolute; }
+  #all-tasks .header .top .tasks-total {
+    top: 0; }
+    #all-tasks .header .top .tasks-total .task {
+      display: block; }
+      #all-tasks .header .top .tasks-total .task .number {
+        top: 3px;
+        font-size: 24px; } }
+
+@media screen and (max-width: 355px) {
+  #all-tasks .header .add-circle {
+    top: 128px;
+    right: 25px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    position: absolute; }
+  #all-tasks .header .top .logo {
+    float: none;
+    text-align: center; }
+  #all-tasks .header .top .tasks-total {
+    top: 0px;
+    text-align: center; }
+    #all-tasks .header .top .tasks-total .task {
+      display: inline-block; }
+      #all-tasks .header .top .tasks-total .task .number {
+        top: 3px;
+        font-size: 24px; } }
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html, body {
+  background: #EDEDED;
+  height: 100%;
+  overflow: hidden; }
